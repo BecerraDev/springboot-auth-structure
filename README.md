@@ -31,7 +31,6 @@ Este proyecto es una práctica para implementar autenticación de usuarios utili
 ## Aprendizajes y detalles importantes 💡
 - Comprendí mejor el uso y la integración de anotaciones (`@Service`, `@Controller`, `@Builder`) para estructurar el código.  
 - El manejo de dependencias es fundamental: una versión desactualizada puede generar errores en anotaciones y fallos en compilación, como fue el caso con **Lombok**.  
-- ChatGPT ayudó principalmente en explicar conceptos, pero el código inicial generado tenía errores y debía ser ajustado.  
 
 ---
 
