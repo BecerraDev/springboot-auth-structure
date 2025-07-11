@@ -1,15 +1,44 @@
-Hola comunidad de GitHub!
+# Proyecto de Autenticación con Spring Boot 🔒🚀
 
-Este es un proyecto simple que desarrollé para practicar autenticación en Spring Boot. 
-Incluye funcionalidades de inicio de sesión y registro de usuarios, utilizando Spring Security y JWT (JSON Web Tokens).
+## Descripción 📝
+Este proyecto es una práctica para implementar autenticación de usuarios utilizando **Spring Boot**. Incluye funcionalidades de inicio de sesión y registro de usuarios, haciendo uso de **Spring Security** y **JWT (JSON Web Tokens)** para gestionar la seguridad y autorización.
 
-La estructura base que seguí fue -> auth/login y auth/register
+---
 
-Tuve una mejor comprensión de cómo implementar el login usando anotaciones como 
-@Service y @Controller, y utilicé @Builder para construir los objetos de las solicitudes (Request).
+## Estructura del proyecto 📂
+- Endpoints base:  
+  - `/auth/login` — para iniciar sesión  
+  - `/auth/register` — para registrar nuevos usuarios  
+- Uso de anotaciones como `@Service` y `@Controller` para separar responsabilidades.  
+- Empleo de `@Builder` para construir objetos de solicitud (Request).  
 
-También comprendí mejor el manejo de las dependencias. Si una dependencia está desactualizada, puede generar errores y hacer que las anotaciones dejen de funcionar correctamente. Esto fue lo que me ocurrió con Lombok.
-ChatGPT no fue tan útil en términos de código, solo ayudó para entender los conceptos. El código proporcionado generaba muchos errores, principalmente debido a la base de datos de la IA, código desactualizado, errores en las anotaciones y varias cosas redundantes.
+---
 
-Siguiente termino, Utilicé el patrón Modelo-Vista-Controlador (MVC), separando el código en las capas correspondientes: Entity, Repositorio, Service y Controller. 
-La base de datos se creó a través de tablas Entity, utilizando Hibernate para el mapeo objeto-relacional. En el proceso, asigné campos específicos como llaves primarias e índices
+## Tecnologías y patrones usados 🛠️
+- **Java 17+**  
+- **Spring Boot**  
+- **Spring Security**  
+- **JWT (JSON Web Tokens)**  
+- **Hibernate** para el mapeo objeto-relacional (ORM)  
+- **Patrón Modelo-Vista-Controlador (MVC)**:  
+  - Capa Entity  
+  - Capa Repository  
+  - Capa Service  
+  - Capa Controller  
+
+---
+
+## Aprendizajes y detalles importantes 💡
+- Comprendí mejor el uso y la integración de anotaciones (`@Service`, `@Controller`, `@Builder`) para estructurar el código.  
+- El manejo de dependencias es fundamental: una versión desactualizada puede generar errores en anotaciones y fallos en compilación, como fue el caso con **Lombok**.  
+- ChatGPT ayudó principalmente en explicar conceptos, pero el código inicial generado tenía errores y debía ser ajustado.  
+
+---
+
+## Uso y ejecución 🚀
+1. Clonar repositorio  
+2. Configurar base de datos en `application.properties`  
+3. Ejecutar con:  
+   ```bash
+   mvn spring-boot:run
+
